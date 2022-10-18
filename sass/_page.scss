@@ -1,0 +1,40 @@
+.wrapper {
+   @include size($h, $w);
+   @include font(22px, $ff, 400, 2px, 50px, $color_23);
+
+   .container {
+      @include size($h, $w);
+      background: #fcfcfc;
+      @include display($df, flex-start, flex-start);
+      flex-direction: column;
+
+      .calculatorWrapp {
+         @include size(auto, 300px);
+         border: 3px solid #000;
+         margin-top: 50px;
+         border-radius: 2%;
+         background: rgb(252, 219, 112);
+      }
+
+
+      .servButton,
+      .number {
+         border: 3px solid #000;
+         background: #2323;
+         height: 50px;
+         text-align: center;
+         border-radius: 10%;
+      }
+
+      .result {
+         border: 3px solid #000;
+         background: rgba(116, 247, 65, 0.2);
+         text-align: right;
+         overflow: auto;
+         height: 80px;
+         width: auto;
+         border-radius: 2%;
+      }
+   }
+
+}
